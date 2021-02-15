@@ -6,8 +6,8 @@
     <body>
       <form action="hello.php" method="get">
           <h1> Simple PHP program </h1>
-          Full Name:<input type="text" name="name"><br>
-          Email Address:<input type name="email">
+          Name:<input type="text" name="name"><br>
+          Email:<input type name="email"> <br>
           <input type="submit">
       </form>
     </body>
