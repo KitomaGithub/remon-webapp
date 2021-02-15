@@ -4,11 +4,16 @@
       <title> Website </title>
     </head>
     <body>
-      <form action="hello.php" method="get">
-          <h1> Simple PHP program </h1>
-          Name:<input type="text" name="name"><br>
-          Email:<input type name="email"> <br>
-          <input type="submit">
-      </form>
+        <pre>
+            <?php
+                $pdo = new PDO('sqlite:master.db');
+                
+                $state = $pdo->query("SELECT * FROM ability_list");
+                    
+                $rows = $state->fetchAll(PDO::FETCH_ASSOC);
+
+                var_dump($rows);
+            ?>
+        </pre>
     </body>
 </html>
